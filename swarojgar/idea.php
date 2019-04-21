@@ -1,0 +1,85 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <link href="w3.css" rel="stylesheet" type="text/css"/>
+    <style>
+       input[type=text],select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */  
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+                                          }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="w3-container w3-center w3-card-4" style="width:60%; margin-left:280px; margin-top:30px; ">
+    <h2 class="w3-blue">Idea form</h2>
+    <div class="w3-container w3-left">
+        <form class="w3-container" action="get_idea.php" method="POST">
+       <label for="fname" class="w3-left w3-text-blue">Subject</label>
+            <input type="text" id="fname" name="Subject" placeholder="e.g conductor free bus..">
+
+         
+            
+
+            <label for="subject" class="w3-left w3-text-blue">Description</label>
+            <textarea id="subject" name="Desc" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="members" class="w3-left w3-text-blue">No. of Members Required</label>
+            <input type="text" id="members" name="members" placeholder="e.g 4,5..">
+            <label for="fund" class="w3-left w3-text-blue">Estimated Fund</label>
+            <input type="text" id="fund" name="fund" placeholder="e.g 20,000">
+
+            <input type="submit" class="w3-left" value="Submit">
+        
+    </form>
+    </div>
+    
+    
+    </div>
+    
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
